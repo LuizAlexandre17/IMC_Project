@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    tools:context=".AcessarActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/Light">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/main_info_1"
+                android:layout_marginTop="20px"
+                android:textColor="@color/white"
+                android:layout_marginLeft="20px"
+                android:textSize="40px"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/main_info_2"
+                android:textColor="@color/white"
+                android:layout_marginLeft="20px"
+                android:layout_marginBottom="20px"
+                android:textSize="25px"/>
+
+        </LinearLayout>
+
+
+        <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="20px"
+           android:text="@string/main_peso"
+           android:layout_marginTop="10px"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:layout_marginTop="2px"
+                android:layout_width="280dp"
+                android:id="@+id/form_peso"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:background="@drawable/border"
+                android:hint="Insira seu Peso"
+                android:inputType="number"/>
+            <TextView
+                android:layout_marginLeft="20px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/main_kg"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:text="@string/main_alt"
+            android:layout_marginTop="10px"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:layout_marginTop="2px"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/form_alt"
+                android:layout_marginLeft="20px"
+                android:background="@drawable/border"
+                android:hint="Insira sua Altura"
+                android:inputType="numberDecimal"/>
+            <TextView
+                android:layout_marginLeft="20px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/main_alt"/>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10px"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="40px"
+            android:text="@string/main_btn_calc"
+            android:layout_marginBottom="10px"
+            android:id="@+id/btn_calc"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/border">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/main_resp"
+            android:textAlignment="center"/>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
+           <EditText
+               android:id="@+id/res_pes_ideal"
+               android:layout_width="350px"
+               android:layout_height="match_parent"
+               android:hint="Peso Ideal"
+               android:inputType="none"/>
+           <EditText
+               android:id="@+id/res_IMC"
+               android:layout_marginLeft="45px"
+               android:layout_width="match_parent"
+               android:layout_marginRight="25px"
+               android:layout_height="match_parent"
+               android:hint="IMC"
+               android:inputType="none"/>
+       </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="25px"
+            android:id="@+id/res_interp"
+            android:hint="Interpretação"
+            android:inputType="none"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10px"
+
+            android:text="@string/main_btn_clear"
+            android:layout_marginBottom="10px"
+            android:id="@+id/btn_clear"/>
+    </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

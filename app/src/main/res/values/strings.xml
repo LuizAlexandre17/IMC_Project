@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">IMC_Calculator</string>
+    <string name="main_info_1">Indice de Massa Corporal (IMC)</string>
+    <string name="main_info_2">Uma medida da gordura corporal em adultos</string>
+    <string name="main_peso">Peso</string>
+    <string name="main_kg">Kg</string>
+    <string name="main_alt">Metros</string>
+    <string name="main_med">Alt</string>
+    <string name="main_btn_calc">Calcular</string>
+    <string name="main_resp">Resposta</string>
+    <string name="main_btn_clear">Limpar</string>
+</resources>
